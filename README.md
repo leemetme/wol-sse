@@ -88,10 +88,12 @@ curl https://[your address and port]/sse/AB:CD:EF:12:34:56/on -X POST -H "Author
 
 You can make this even cooler on Apple iOS devices by creating a Shortcut using the built-in Shortcuts app.
 
-Make a new shortcut, and add the "Get contents of URL" into it.
-Set the URL to `https://[your address and port]/sse/[MAC address]/on`.
-Set the method to `POST` and add an header,
-where the key is `Authorization` and the value is `Bearer [your token]`.
+1. Make a new shortcut
+2. Add the "Get contents of URL" into it.
+3. Set the URL to `https://[your address and port]/sse/[MAC address]/on`.
+4. Set the method to `POST`
+5. Add a header, where the key is `Authorization` and the value is `Bearer [your token]`.
+
 Now you can add the created shortcut to your home screen.
 Tapping the shortcut will make you turn on your computer - anywhere you are!
 

@@ -69,7 +69,7 @@ and see `{"listenerCount": 0}`.
 
 ## ESP configuration
 
-Boot up the Arduino IDE and install the [`WakeOnLan` library](https://github.com/a7md0/WakeOnLan) by the amazing (a7md0)[https://github.com/a7md0].
+Boot up the Arduino IDE and install the [`WakeOnLan` library](https://github.com/a7md0/WakeOnLan) by the amazing [a7md0](https://github.com/a7md0).
 Install libraries in the Arduino IDE using the library manager in the left sidebar.
 
 Open the `wol_sse.ino` file in the Arduino IDE and edit the constants at the beginning of the file.

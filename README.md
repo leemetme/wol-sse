@@ -15,6 +15,9 @@ What you'll need to set this up:
 
 ## Setup tutorial
 ### Server configuration
+
+Install Node.JS on your server if you haven't already.
+
 Edit the following things in the `wol_sse_server.js` file.
 - `const HTTP_PORT` ...edit this variable directly or provide an environment variable `HTTP_PORT` when booting up to define the port the HTTP server will be hosted in.
 - `const config` ...remove the examples from the dictionary and add a new configuration with your preffered name
@@ -53,7 +56,11 @@ const config = {
 Later on, I'd supply `blablablabla` for the home ESP as the token and
 `albalbalbalb` as the token for the work ESP.
 
-Once you've got your file setup, use something like `pm2` to constantly
+Once you've got your file setup, install a dependency called "Express" for our application.
+To do that, navigate to the folder where you have `wol_sse_server.js` on the command line,
+and type the command `npm install express`.
+
+Afterwards, use something like `pm2` to constantly
 keep the `wol_sse_server.js` file running, and use a reverse proxy like `nginx`
 to host your HTTP server. I'd implore you to host the website using HTTPS.
 
